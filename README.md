@@ -21,6 +21,10 @@ This template is based on the [min-love2d-fennel](https://gitlab.com/alexjgriffi
 
 **Setup**
 
+If you have `set exrc` you can just open `game.fnl` and the game will start automatically.
+If not you must execute the commands in `.nvim.lua` manually first.  I.e.
+
+- execute `:lua vim.g['conjure#filetype#fennel'] = "conjure.client.fennel.stdio"` **before** opening the project
 - execute `:lua vim.g['conjure#client#fennel#stdio#command'] = "love ."` **before** opening the project
 - open `game.fnl` and `love` should start the game automatically
 
